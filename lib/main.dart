@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Query(
         options: QueryOptions(
           document: gql(getAlbumn),
-          variables: {'page': 1,'limit':7}
+          variables: {'page': 1,'limit':10}
         ),
         builder: (QueryResult result, {fetchMore, refetch}) {
           if (result.hasException) {
